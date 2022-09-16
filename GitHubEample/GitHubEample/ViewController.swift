@@ -25,6 +25,14 @@ class ViewController: UIViewController {
         label.bounds = .init(x: 90, y: 90, width: 90, height: 90)
         return label
     }()
+    private let thirdLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x: 150, y: 320, width: 200, height: 200))
+        label.backgroundColor = .green
+        label.text = "Hello"
+        label.textAlignment = .center
+        label.bounds = .init(x: 90, y: 90, width: 90, height: 90)
+        return label
+    }()
     
     
     override func viewDidLoad() {
@@ -32,6 +40,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         view.addSubview(firstLabel)
         view.addSubview(secondLabel)
+        view.addSubview(thirdLabel)
     }
 
 
