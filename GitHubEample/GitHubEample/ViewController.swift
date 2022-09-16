@@ -14,6 +14,14 @@ class ViewController: UIViewController {
         label.backgroundColor = .red
         label.text = "Hello"
         label.textAlignment = .center
+        label.bounds = .init(x: 90, y: 90, width: 70, height: 70)
+        return label
+    }()
+    private let secondLabel:UILabel = {
+        let label = UILabel(frame: CGRect(x: 200, y: 200, width: 200, height: 200))
+        label.backgroundColor = .yellow
+        label.text = "Hello"
+        label.textAlignment = .center
         label.bounds = .init(x: 90, y: 90, width: 90, height: 90)
         return label
     }()
@@ -23,6 +31,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.addSubview(firstLabel)
+        view.addSubview(secondLabel)
     }
 
 
